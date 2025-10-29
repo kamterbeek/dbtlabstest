@@ -7,7 +7,7 @@ with avg_temp AS (
     FROM {{ source('dbtlabsprojects', 'ghcnm_tavg') }}
     WHERE value IS NOT NULL
 ),
- 
+
 station AS (
     SELECT id AS station_id,
     name,
