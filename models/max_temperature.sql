@@ -1,6 +1,14 @@
 {{ config(materialized='table') }}
 
-select
-    id as station_id,
-    value1 / 100.0 as max_temperature
-from {{ source('ghcnm', 'ghcnm_tmax') }}
+WITH t AS (
+    SELECT
+        m.id,
+        m.value1 / 100.0 AS temperature_c
+    FROM {{ source('ghcnm', 'ghcnm_tmax') }} AS m
+)
+
+SELECT
+    id,
+    MAX(temperature_c) AS max_temperature
+FROM t
+GROUP BY id
