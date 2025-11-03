@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: ghcnm
     database: dbtlabsprojects       
-    schema: 10_25                  
+    schema: "10_25"                  
     tables:
       - name: ghcnm_tavg
       - name: ghcnm_tmax
