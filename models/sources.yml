@@ -3,6 +3,6 @@ version: 2
 sources:
   - name: ghcnm
     tables:
-    - name: ghcnm_tavg
-    - name: ghcnm_tmax
-    - name: ghcnm_tmin
+      - name: ghcnm_tavg
+      - name: ghcnm_tmax
+      - name: ghcnm_tmin
