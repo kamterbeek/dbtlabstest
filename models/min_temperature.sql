@@ -1,6 +1,14 @@
 {{ config(materialized='table') }}
 
-select
-    id as station_id,
-    value1 / 100.0 as min_temperature
-from {{ source('ghcnm', 'ghcnm_tmin') }}
+WITH t AS (
+    SELECT
+        m.id,
+        m.value1 / 100.0 AS temperature_c
+    FROM {{ source('ghcnm', 'ghcnm_tmin') }} AS m
+)
+
+SELECT
+    id,
+    MIN(temperature_c) AS min_temperature
+FROM t
+GROUP BY id
