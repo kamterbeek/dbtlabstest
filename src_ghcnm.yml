@@ -6,4 +6,4 @@ sources:
     schema: "10_25"                        
     tables:
       - name: ghcnm_tavg
-      - name: ghcnm_tavg_stations
+      - name: ghcnm_tavg_stations 
