@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: avg_temperature
+    description: "Average temperature by station"
+    columns:
+      - name: station_id
+        description: "Unique station identifier"
+      - name: avg_temperature
+        description: "Average temperature for the station"
+
+  - name: max_temperature
+    description: "Average max temperature by station"
+    columns:
+      - name: station_id
+        description: "Unique station identifier"
+      - name: max_temperature
+        description: "Average maximum temperature for the station"
+
+  - name: min_temperature
+    description: "Average min temperature by station"
+    columns:
+      - name: station_id
+        description: "Unique station identifier"
+      - name: min_temperature
+        description: "Average minimum temperature for the station"
