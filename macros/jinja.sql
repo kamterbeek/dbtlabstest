@@ -8,7 +8,6 @@ a refreshing lemon sorbet
 {% else %}
 a decadent chocolate cake.
 {% endif %}
-
 {# for loops and variables #}
 
 {% for j in range(26) %}
