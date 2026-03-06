@@ -18,4 +18,6 @@ select {{ j }} as number{% if not loop.last %} union all{% endif %}
 {# if and else #}
 {% set temperature = 60.0 %}
 
-On a day like this, I especially
+On a day like this, I especially like
+
+
