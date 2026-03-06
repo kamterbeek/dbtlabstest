@@ -20,4 +20,5 @@ select {{ j }} as number{% if not loop.last %} union all{% endif %}
 
 On a day like this, I especially like
 
+{% if temperature > 70 %}
 
