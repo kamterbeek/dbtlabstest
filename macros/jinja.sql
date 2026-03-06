@@ -17,4 +17,5 @@ On a day like this, I especially like
 
 {% if temperature > 70 %}
 a refreshing lemon sorbet
+{% else %}
 
