@@ -14,3 +14,8 @@ a decadent chocolate cake.
 {% for j in range(26) %}
 select {{ j }} as number{% if not loop.last %} union all{% endif %}
 {% endfor %}
+
+{# if and else #}
+{% set temperature = 60.0 %}
+
+On a day like this, I especially
