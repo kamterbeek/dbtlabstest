@@ -14,4 +14,6 @@ a decadent chocolate cake.
 {% endif %}
 
 {# for loops and variables #}
+  
 {% for j in range(25) %}
+select {{ j }} as number{% if not loop.last %} union all{% endif %}
