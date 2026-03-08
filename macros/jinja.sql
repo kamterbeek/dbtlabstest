@@ -1,4 +1,3 @@
-
 {# if and else #}
 {% set temperature = 60.0 %}
 
